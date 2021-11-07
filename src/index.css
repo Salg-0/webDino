@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+canvas {
+    background-color: #202124;
+    width: 97vw;
+    height: 82.5vh;
+    position: fixed;
+    top: 15%;
+    left: 1.5%;
+    border-radius: 10vh;
+}
+
+h2 {
+    font-size: min(1.6vh, 1.6vw);
+}
+
+div {
+    color: #202124;
+}
+
+.scoreBox {
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 2vh;
+    width: min(12.5vh, 20vw);
+    padding: 1vh 1vw 1vh 1vw;
+    position: fixed;
+    top: 1%;
+    right: 5%;
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(48, 26, 74, 0.63);
+    box-shadow: 0px 4px 13px 0px rgba(48, 26, 74, 0.63);
+}
+
+.button {
+    vertical-align: middle;
+    background-color: #acacac;
+    text-align: center;
+    text-overflow: ellipsis;
+    height: min(12.5vh, 20vw);
+    position: fixed;
+    padding: 1vh 1vw 1vh 1vw;
+    top: 1%;
+    left: 5%;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+    .button:hover span {
+        padding-right: 3vh;
+    }
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.title {
+    font-size: min(5vh, 5vw);
+    display: flex;
+}
+
+.click {
+    width: min(7vh, 7vw);
+    height: min(7vh, 7vw);
+}
+
+.dino {
+    display: none;
+    width: min(7vh, 7vw);
+    height: min(7vh, 7vw);
+}
